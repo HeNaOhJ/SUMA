@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+       <link rel="stylesheet" href="suma.css">
+    <title>Suma</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+       var m=0;
+        x = [];
+        function suma() {
+        var n1= Number(document.getElementById("num1").value);
+        var n2= Number(document.getElementById("num2").value);
+        resp=Number(num1.value)+Number(num2.value);
+        console.log("Suma igual a"+resp);
+        x.push(resp);
+        }
+        var busca=function(){
+        var h=document.getElementById('res');
+        var n22=document.getElementById('n2');
+        var z=Number(n22.value);
+        h.value=x[z];
+    }
+
+</script>
+<form>
+    <a href="https://henaohj.github.io/tecnologia/periodo%201.html" class="js"><h1>Volver</h1></a>
+    <div class="tabla"><center>
+       <div class="letra"><center>
+           <h1>CALCULADORA</h1>
+       </center><br>
+       
+        <input type="text" id="num1" placeholder="Ingrese numero 1" ><br><br>
+        <input type="text" id="num2" placeholder="Ingrese numero 2" ><br><br>
+        <input class="ju" type="button" value="Ingresar" onclick="suma();"><h1>RESULTADO</h1>
+                <input type="" id="resp" value=""><h1>CONTADOR</h1>
+    </div><</div>
+        <input type="text" id="n2" placeholder="posicion" class="d">
+        <input type="button" value="BUscar" onclick="busca();" class="buscar">
+        <input type="text" id="res" value="Resultado " class="f">
+        </center>
+    </form>
+
+</body>
+</html>
